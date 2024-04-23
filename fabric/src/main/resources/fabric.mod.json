@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "dockercomputer",
+  "version": "${version}",
+  "name": "Docker Computer Mod",
+  "description": "This is an Docker Computer description! Tell everyone what your mod is about!",
+  "authors": [
+    "Me!"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "Insert License Here",
+  "icon": "assets/dockercomputer/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "ovh.smee.dockercomputer.fabric.DockerComputerModFabric"
+    ]
+  },
+  "mixins": [
+    "dockercomputer.mixins.json",
+    "dockercomputer-common.mixins.json"
+  ],
+  "depends": {
+    "fabric": "*",
+    "minecraft": ">=1.20.1",
+    "architectury": ">=9.1.12"
+  }
+}
